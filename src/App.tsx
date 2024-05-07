@@ -4,10 +4,11 @@ import { useCar } from "./hooks/useCar"
 import './App.css'
 
 function App() {
-  const { data, car, addToCart, removeCar, decrementCar, increaseQuantity, clearCar, isEmpty, carTotal } = useCar();
+  const { data, car, addToCart, removeCar, decrementCar, increaseQuantity, clearCar, isEmpty, carTotal, showCart, handleCartClick, refCar} = useCar();
+
 
   return (
-    <>
+    <div>
       <Header
         car={car}
         removeCar = {removeCar}
@@ -17,19 +18,22 @@ function App() {
         isEmpty = {isEmpty}
         carTotal = {carTotal}
         addToCart = {addToCart}
+        showCart = {showCart}
+        handleCartClick = {handleCartClick}
+        refCar = {refCar}
      />
 
-    <main className="container-xl mt-5">
-        <h2 className="text-center">Nuestra Colección</h2>
+    <main className="container-xl mt-5 container_grid">
+        <h2 className="text-center title-colection">Nuestra Colección</h2>
 
-        <div className="row mt-5">
+        <div className="contain_grid">
             {data. map((guitar)=> (
-                <Guitar 
-                    key = { guitar.id }
-                    guitar = { guitar }
-                    addToCart = {addToCart}
-                />
-            ))}
+              <Guitar  
+                  key = { guitar.id }
+                  guitar = { guitar }
+                  addToCart = {addToCart}
+              />
+              ))}
         </div>
     </main>
     
@@ -38,7 +42,7 @@ function App() {
             <p className="text-white text-center fs-4 mt-4 m-md-0">GuitarLA - Todos los derechos Reservados</p>
         </div>
     </footer>
-    </>
+    </div>
   )
 }
 

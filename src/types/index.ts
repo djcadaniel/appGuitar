@@ -4,6 +4,7 @@ export type Guitar = {
   image: string;
   description: string;
   price: number;
+  point: number;
 }
 
 export type CarItem = Guitar & {
@@ -11,3 +12,12 @@ export type CarItem = Guitar & {
 }
 
 export type GuitarID = Guitar['id']
+
+export type HeaderProps = {
+  handleCartClick: (e: Event) => void;
+}
+
+export type CartRef = {
+  current: HTMLDivElement;
+  contains(target: Node):boolean;
+}

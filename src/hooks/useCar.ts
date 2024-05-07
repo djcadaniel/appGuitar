@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {db} from '../data/db';
-import type { Guitar, CarItem, GuitarID } from '../types';
+import type { Guitar, CarItem, GuitarID, CartRef } from '../types';
 
 export const useCar = () => {
   const initialCar = () : CarItem[] =>{
@@ -10,14 +10,35 @@ export const useCar = () => {
 
   const [data] = useState(db)
   const [car, setCar] = useState(initialCar)
+  const [showCart, setShowCart] = useState(false);
+  
+//   const menuRef = useRef<CartRef>();
 
   const MAX_ITEMS = 5;
   const MIN_ITEMS = 1;
 
   useEffect(() => {
       localStorage.setItem('car', JSON.stringify(car))
+      document.addEventListener('click', handleClickOutside)
   }, [car])
 
+  const handleCartClick = ()=>{
+    setShowCart(!showCart)
+  }
+
+  const refCar = useRef<CartRef>(null);
+  
+  const handleClickOutside = (e: Event) => {
+    if(!refCar.current || e.target === null){
+        return;
+    }
+
+    if(!refCar.current.contains(e.target as Node)){
+        console.log('outside')
+        setShowCart(false)
+        console.log(showCart)
+    }
+}
 
   function addToCart(item: Guitar){
 
@@ -85,6 +106,9 @@ export const useCar = () => {
     increaseQuantity,
     clearCar,
     isEmpty,
-    carTotal
+    carTotal,
+    handleCartClick,
+    showCart,
+    refCar
   }
 }

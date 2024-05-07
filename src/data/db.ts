@@ -7,6 +7,7 @@ export const db : Guitar[] = [
       image: 'guitarra_01',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 299,
+      point: 5
   },
   {
       id: 2,
@@ -14,6 +15,7 @@ export const db : Guitar[] = [
       image: 'guitarra_02',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 349,
+      point: 2
   },
   {
       id: 3,
@@ -21,6 +23,7 @@ export const db : Guitar[] = [
       image: 'guitarra_03',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 329,
+      point: 3
   },
   {
       id: 4,
@@ -28,6 +31,7 @@ export const db : Guitar[] = [
       image: 'guitarra_04',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 299,
+      point: 4
   },
   {
       id: 5,
@@ -35,6 +39,7 @@ export const db : Guitar[] = [
       image: 'guitarra_05',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 399,
+      point: 1
   },
   {
       id: 6,
@@ -42,6 +47,7 @@ export const db : Guitar[] = [
       image: 'guitarra_06',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 329,
+      point: 3
   },
   {
       id: 7,
@@ -49,6 +55,7 @@ export const db : Guitar[] = [
       image: 'guitarra_07',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 349,
+      point: 5
   },
   {
       id: 8,
@@ -56,6 +63,7 @@ export const db : Guitar[] = [
       image: 'guitarra_08',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 379,
+      point: 4
   },
   {
       id: 9,
@@ -63,6 +71,7 @@ export const db : Guitar[] = [
       image: 'guitarra_09',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 289,
+      point: 2
   },
   {
       id: 10,
@@ -70,6 +79,7 @@ export const db : Guitar[] = [
       image: 'guitarra_10',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 349,
+      point: 1
   },
   {
       id: 11,
@@ -77,6 +87,7 @@ export const db : Guitar[] = [
       image: 'guitarra_11',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 399,
+      point: 5
   },
   {
       id: 12,
@@ -84,5 +95,6 @@ export const db : Guitar[] = [
       image: 'guitarra_12',
       description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
       price: 379,
+      point: 3
   },
 ]
