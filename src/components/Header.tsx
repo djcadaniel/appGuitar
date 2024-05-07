@@ -1,5 +1,5 @@
 import { db } from "../data/db"
-import { CarItem, CartRef, Guitar } from "../types"
+import { CarItem, Guitar } from "../types"
 import { FaRegSadCry } from "react-icons/fa";
 
 type HeaderProps = {
