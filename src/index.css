@@ -768,7 +768,7 @@ button:not(:disabled),
   }
 }
 .header {
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/imgBg.jpg");
   background-position: 50%;
   background-size: cover;
