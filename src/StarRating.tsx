@@ -5,7 +5,7 @@ export const StarRating = ({maxStar, selectedStars} : any) => {
   return (
     <div className="container_rating">
       {
-        [... Array(maxStar)].map((index)=>(
+        [... Array(maxStar)].map((_, index)=>(
           <div key={index}>
             {
               index < selectedStars ? <FaStar className="startScore"/> : <FaRegStar className="endScore"/> 
