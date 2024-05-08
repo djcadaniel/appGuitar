@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div>
+    <>
       <Header
         car={car}
         removeCar = {removeCar}
@@ -38,13 +38,20 @@ function App() {
 
       </div>
     </main>
-    
-    <footer className="bg-dark mt-5 py-5">
-        <div className="container-xl">
-            <p className="text-white text-center fs-4 mt-4 m-md-0">GuitarLA - Todos los derechos Reservados</p>
+    <footer className="bg-dark py-5 footer">
+        <div className="container-xl footer_container">
+          <div className="footer_img">
+            <a href="index.html">
+                <img className="img-fluid" src="/img/logo.png" alt="imagen logo" />
+            </a>
+          </div>
+          <div className="footer_description">
+            <p>Made in React and TypeSctipt - API</p>
+            <small><a href="https://danielcastro.netlify.app/" target="_blank">@djcadanieldev</a></small>
+          </div>
         </div>
     </footer>
-    </div>
+    </>
   )
 }
 

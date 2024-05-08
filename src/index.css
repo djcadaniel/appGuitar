@@ -913,7 +913,7 @@ button:not(:disabled),
   margin: 0 !important;
   width: 100% !important;
   margin: 0 auto !important;
-  padding-top: 3rem !important;
+  padding: 3rem 0 5rem 0 !important;
   background-color: var(--bs-gray-800);
 }
 .contain_grid{
@@ -1027,6 +1027,41 @@ button:not(:disabled),
   left: 0;
 }
 
+.footer{
+  width: 100%;
+}
+.footer_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer_img{
+  width: auto;
+  margin: 0 auto;
+}
+.footer_img a img{
+  max-width: 100%;
+  height: auto;
+}
+.footer_description{
+  width: auto;
+  margin: 0 auto;
+}
+.footer_description p{
+  padding: 0 !important;
+  margin: 0 !important;
+  color: white;
+  line-height: 3rem;
+  font-family: var(--bs-font-monospace);
+}
+.footer_description small a{
+  font-size: 1rem;
+  font-family: var(--bs-font-monospace);
+  color: #57d570;
+}
+
 @media only screen and (max-width: 1150px){
   .contain_grid{
     display: grid;
@@ -1081,14 +1116,17 @@ button:not(:disabled),
     margin: 0 auto;
   }
   .grid_container_img{
-    width: 70%;
-    padding: 2.5rem;
+    width: 80%;
+    padding: 4rem 0 0 0;
     z-index: 2;
   }
   .grid_container_img img{
-    width: 70%;
+    width: 80%;
     background-color: transparent;
     transition: transform .3s;
+  }
+  .grid_container_img img:hover{
+    transform: scale(1.1);
   }
   .header_ofer--text{
     width: 100%;
@@ -1147,5 +1185,38 @@ button:not(:disabled),
     top: 0;
     left: 0;
     background-color: transparent;
+  }
+
+  .footer{
+    width: 100%;
+  }
+  .footer_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer_img{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer_img a img{
+    max-width: 25%;
+    height: auto;
+  }
+  .footer_description{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer_description p{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: white;
+    line-height: 3rem;
+    font-family: var(--bs-font-monospace);
+  }
+  .footer_description small a{
+    font-size: 1rem;
+    font-family: var(--bs-font-monospace);
+    color: #57d570;
   }
 }
