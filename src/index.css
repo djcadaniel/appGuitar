@@ -1065,6 +1065,13 @@ button:not(:disabled),
 }
 
 @media only screen and (max-width: 620px){
+  .header {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/imgMobile.jpg");
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+  }
   .contain_grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
