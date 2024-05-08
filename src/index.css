@@ -914,6 +914,7 @@ button:not(:disabled),
   width: 100% !important;
   margin: 0 auto !important;
   padding-top: 3rem !important;
+  background-color: var(--bs-gray-800);
 }
 .contain_grid{
   display: grid;
@@ -940,7 +941,7 @@ button:not(:disabled),
   height: 350%;
   width: 650%;
   background-image: conic-gradient(rgb(62, 61, 61) 20deg, transparent 120deg);
-  animation: rotar 2s linear infinite;
+  /* animation: rotar 2s linear infinite; */
 }
 @keyframes rotar{
   from{

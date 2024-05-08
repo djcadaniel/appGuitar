@@ -23,9 +23,9 @@ function App() {
         refCar = {refCar}
      />
 
-    <main className="container-xl mt-5 container_grid">
+    <main className=" mt-5 container_grid">
+      <div className="container-xl">
         <h2 className="text-center title-colection">Nuestra Colección</h2>
-
         <div className="contain_grid">
             {data. map((guitar)=> (
               <Guitar  
@@ -35,6 +35,8 @@ function App() {
               />
               ))}
         </div>
+
+      </div>
     </main>
     
     <footer className="bg-dark mt-5 py-5">
