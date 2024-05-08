@@ -48,13 +48,13 @@
   background-color: rgb(0,136,45) !important;
 }
 .btn-dark {
-  background-color: #023e16 !important;
+  background-color: #00B224 !important;
   border-radius: 10px !important;
   border:0px !important;
   transition: background-color 0.3s ease-in-out;
 }
 .btn-dark:hover{
-  background-color: #00B224!important;
+  background-color:  #023e16  !important;
 }
 .m-0 {
   margin: 0;
@@ -931,7 +931,7 @@ button:not(:disabled),
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -940,7 +940,7 @@ button:not(:disabled),
   position: absolute;
   height: 350%;
   width: 650%;
-  background-image: conic-gradient(rgb(62, 61, 61) 20deg, transparent 120deg);
+  /* background-image: conic-gradient(rgb(62, 61, 61) 20deg, transparent 120deg); */
   /* animation: rotar 2s linear infinite; */
 }
 @keyframes rotar{
@@ -954,11 +954,11 @@ button:not(:disabled),
 .guitar_grid_item::after{
   content:"";
   position: absolute;
-  height: 98%;
+  height: 97%;
   width: 96%;
   background-color: white;
-  border-radius: 15px;
-  box-shadow: inset 1px 5px 10px rgb(138, 140, 138);
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 5px rgb(66, 66, 66);
 }
 .grid_container_img{
   width: 100%;
@@ -972,21 +972,21 @@ button:not(:disabled),
 }
 
 .grid_container_img img:hover{
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 .grid_container_description{
   width: 100%;
   z-index: 2;
 }
 .guitar_price--item{
-  color: #57D570 !important;
+  color: #39994c !important;
   transition: color .2s ease-in-out !important;
 }
 .guitar_price--item:hover{
-  color:#3a914b !important;
+  color:#57d570 !important;
 }
 .title-colection{
-  color: #00882C;
+  color: #57d570;
   padding-bottom: 4rem;
 }
 .description_guitar{
@@ -994,7 +994,7 @@ button:not(:disabled),
   font-size: .9rem !important;
 }
 .item_name{
-  color: #025c1f !important;
+  color: #39994c !important;
 }
 .container_rating{
   width: 100%;
